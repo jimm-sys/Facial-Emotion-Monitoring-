@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated System</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #90f790;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #12451d;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar div {
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar div:hover {
+            background-color: #249553;
+        }
+
+        .videoSection {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-left: 10px;
+            gap: 10px;
+        }
+
+        .profile,
+        .video,
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            margin-left: auto;
+            flex: 1;
+            text-align: center;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .buttons {
+            flex-grow: 1;
+            display:flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-right: 10px;
+            background-color: transparent;
+            padding-right: 20px;
+        }
+
+        .buttons div {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            border: none;
+        }
+
+        .buttons div:hover {
+            background-color: #0c3310;
+        }
+
+        .video img {
+            max-width: 70%;
+            height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper {
+            flex-grow: 2;
+            display: 2;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        #stopButton {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #stopButton:hover {
+            background-color: #0c3310;
+        }
+
+        .space {
+            width: 20%;
+        }
+
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .results h3 {
+            margin-bottom: 10px;
+        }
+
+        .emotionProbability {
+            margin-bottom: 5px;
+        }
+
+        /* Styles from index.html */
+        .container {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chatbox {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 40%;
+            height: 90%;
+        }
+
+        .chatbox__support {
+            display: flex;
+            flex-direction: column;
+            background: #eee;
+            width: 100%;
+            height: 100%;
+            z-index: -123456;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
+
+        .chatbox--active {
+            transform: translateY(-40px);
+            z-index: 123456;
+            opacity: 1;
+        }
+
+        .chatbox__button {
+            text-align: right;
+            position: absolute;
+            bottom: 10px; 
+            right: 30px;
+        }
+
+        .send__button {
+            padding: 6px;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .chatbox__header {
+            position: sticky;
+            top: 0;
+            background: orange;
+        }
+
+        .chatbox__image--header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .chatbox__content--header h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .chatbox__content--header p {
+            font-size: 0.9rem;
+        }
+
+        .chatbox__messages {
+            margin-top: auto;
+            display: flex;
+            overflow-y: scroll;
+            flex-direction: column-reverse;
+            padding: 0 20px;
+        }
+
+        .messages__item {
+            margin-top: 10px;
+            background: #E0E0E0;
+            padding: 8px 12px;
+            max-width: 70%;
+            display: inline-block; 
+            border-radius: 5px; 
+        }
+
+        .messages__item--operator {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background: var(--primary);
+            color: white;
+        }
+
+        .chatbox__footer {
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background: var(--secondaryGradient);
+            box-shadow: var(--secondaryBoxShadow);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .chatbox__footer input {
+            width: 80%;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 30px;
+            text-align: left;
+        }
+
+        .chatbox__send--footer {
+            color: black;
+            background-color: red;
+        }
+
+        .chatbox__button button {
+            padding: 10px;
+            background: orange;
+            border: none;
+            outline: none;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .messages__item--operator {
+            background-color: yellow; /* Set background color to blue */
+            color: black; /* Set text color to black */
+        }
+        .typing-indicator {
+            margin-left: 10px;
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="navs">
+        <h3>You deserve Happiness</h3>
+        <div class="navbar">
+            <div class="mood">Test Your Mood</div>
+            <div class="about">About</div>
+        </div>
+    </div>
+    <div class="videoSection">
+        <div class="video-wrapper">
+            <div class="video">
+                <img src="{{ url_for('video_feed') }}" alt="Real-time Video Feed">
+            </div>
+            <a href="#" id="stopButton">Stop</a>
+        </div>
+
+        <div class="space">
+            <div class="results" id="emotionProbabilities">
+                <h3>Emotion Probabilities</h3>
+                <div id="probabilityValues"></div>
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='happy') }}">Happy</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Suprise</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Disgust</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Happy</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Angry</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Fear</a>
+            </div>
+            <div class="button">
+                <a href="{{ url_for('show_emotion', emotion='sad') }}">Neutral</a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Emotions Recommendations</h4>
+                        <p class="chatbox__description--header">Hello, based on your results, enter your emotion state here to get recommendations</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <!-- Messages will be added dynamically here -->
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" id="messageInput" placeholder="Write a message..." onkeypress="handleKeyPress(event)">
+                    <button class="chatbox__send--footer send__button" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button" id="chatboxButton">
+                <button onclick="toggleChatbox()">Let's talk</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let modelRunning = false;
+
+    document.getElementById('stopButton').addEventListener('click', function(event) {
+        event.preventDefault();
+        modelRunning = !modelRunning; // Toggle the modelRunning variable
+        updateStopButtonText(); // Update the button text based on the new state
+    });
+
+    function updateStopButtonText() {
+        const stopButton = document.getElementById('stopButton');
+        stopButton.innerText = modelRunning ? 'Stop' : 'Start';
+    }
+
+
+    const eventSource = new EventSource('/stream_emotions');
+    eventSource.onmessage = function(event) {
+        if (modelRunning) {
+            const data = JSON.parse(event.data);
+            const probabilities = data.probabilities;
+            updateEmotionProbabilities(probabilities);
+        }
+    };
+
+    function updateEmotionProbabilities(probabilities) {
+        const emotionLabels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise'];
+        const emotionProbabilitiesDiv = document.getElementById('emotionProbabilities');
+        emotionProbabilitiesDiv.innerHTML = '<h3>Emotion Probabilities</h3>';
+        probabilities.forEach((probability, index) => {
+            const label = emotionLabels[index];
+            const percentage = (probability * 100).toFixed(2);
+            const probabilityText = `<div class="emotionProbability">${label}: ${percentage}%</div>`;
+            emotionProbabilitiesDiv.insertAdjacentHTML('beforeend', probabilityText);
+        });
+    }
+
+    function toggleChatbox() {
+        const chatbox = document.querySelector('.chatbox__support');
+        chatbox.classList.toggle('chatbox--active');
+    }
+
+    function displayMessage(message, sender) {
+        var messagesContainer = document.querySelector('.chatbox__messages');
+        var messageElement = document.createElement('div');
+        messageElement.classList.add('messages__item');
+        if (sender === 'bot') {
+            messageElement.classList.add('messages__item--operator');
+
+            var typingIndicator = document.createElement('span');
+            typingIndicator.textContent = 'Bot replying...';
+            typingIndicator.classList.add('typing-indicator');
+
+            var messageContent = document.createElement('div');
+            messageContent.textContent = message;
+
+            messageElement.appendChild(messageContent);
+            messageElement.appendChild(typingIndicator);
+
+            // Simulate delay before displaying bot's reply
+            setTimeout(function() {
+                typingIndicator.style.display = 'none'; // Hide typing indicator
+            }, 1000); // Adjust the delay time as needed
+        } else {
+            messageElement.textContent = message;
+        }
+        messagesContainer.insertBefore(messageElement, messagesContainer.firstChild); // Add new message at the bottom
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) { // Check if Enter key is pressed
+            sendMessage(); // Call sendMessage function if Enter key is pressed
+        }
+    }
+
+    function sendMessage() {
+        var messageInput = document.getElementById('messageInput');
+        var message = messageInput.value.trim();
+        if (message !== '') {
+            displayMessage(message, 'user'); // Display user's message
+            fetch('/send_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayMessage(data.response, 'bot');
+            })
+            .catch(error => console.error('Error:', error));
+            messageInput.value = '';
+        }
+    }
+</script>
+
+</body>
+</html>

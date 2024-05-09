@@ -1,0 +1,672 @@
+{
+    "intents": [
+        {
+            
+            "tag": "happy",
+            "patterns": [
+                "I'm happy",
+                "Feeling joyful",
+                "I'm excited",
+                "Feeling ecstatic",
+                "Life is great",
+                "Having a good day",
+                "Feeling on top of the world",
+                "I'm in a fantastic mood",
+                "Full of happiness",
+                "Radiating positivity"
+            ],
+                "responses": [
+                "That's wonderful to hear! When you're feeling happy, you can maintain this emotion by engaging in activities that bring you joy and fulfillment, such as spending time with loved ones, practicing gratitude, exercising, or pursuing hobbies you enjoy.",
+                "It's great to see you're in a positive mood! Consider spreading the happiness by doing something kind for others or expressing your gratitude.",
+                "Feeling happy is fantastic! Take advantage of this positive energy by setting goals, being productive, or tackling tasks that bring you a sense of accomplishment.",
+                "Being happy is contagious! Share your joy with others by organizing a fun activity, hosting a gathering, or simply spreading positivity through kind words and gestures.",
+                "When you're feeling happy, take some time to reflect on the things that bring you joy and appreciate the positive moments in your life.",
+                "Embrace the happiness you're feeling by engaging in activities that uplift your spirits, such as listening to music, dancing, or spending time in nature.",
+                "Feeling happy is a gift! Use this positive energy to inspire and motivate yourself to pursue your dreams and aspirations.",
+                "Let the happiness you're experiencing fuel your creativity and passion. Channel your positive emotions into projects or activities that bring you fulfillment.",
+                "A positive mindset can transform your day! Surround yourself with positivity, practice self-care, and focus on the things that make you smile.",
+                "Remember to savor the moments of happiness and cherish the memories created during these joyful times. Celebrate your happiness and share it with others!"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "sad",
+            "patterns": [
+                "I'm feeling sad",
+                "Feeling down",
+                "I'm upset",
+                "Feeling blue",
+                "Having a rough day",
+                "Feeling low",
+                "Feeling melancholic",
+                "I'm in a gloomy mood",
+                "Feeling heartbroken",
+                "Feeling disappointed"
+            ],
+            "responses": [
+                "I'm sorry to hear that you're feeling sad. During these times, it's important to take care of yourself and engage in activities that bring comfort and solace.",
+                "Feeling sad is a natural emotion, and it's okay to acknowledge and process your feelings. Remember to be gentle with yourself and practice self-care.",
+                "When you're feeling sad, it can be helpful to reach out to a trusted friend or family member for support. Talking about your emotions can provide comfort and perspective.",
+                "Allow yourself to experience your emotions fully and give yourself permission to grieve or feel sad. It's a necessary part of the healing process.",
+                "During moments of sadness, try to focus on activities that bring you peace and relaxation, such as reading a book, taking a warm bath, or practicing mindfulness.",
+                "Seeking professional help or counseling can be beneficial if you're struggling to cope with persistent feelings of sadness. There's no shame in asking for support when you need it.",
+                "Remember that it's okay to not be okay sometimes. Give yourself permission to feel your emotions without judgment or criticism.",
+                "Finding moments of joy and gratitude, even in challenging times, can help alleviate feelings of sadness. Look for small things to appreciate and hold onto hope for brighter days ahead.",
+                "Engage in activities that allow you to express your emotions creatively, such as writing, drawing, or listening to music. Art can be a powerful outlet for processing feelings of sadness.",
+                "Surround yourself with people who uplift and support you during difficult times. Lean on your social network for encouragement and understanding."
+            ],
+            "context": [""]
+        },
+        
+        {
+            "tag": "angry",
+            "patterns": [
+                "I'm angry",
+                "Feeling furious",
+                "I'm mad",
+                "I'm frustrated",
+                "I'm infuriated",
+                "I'm seething with rage",
+                "I'm boiling with anger",
+                "I'm seeing red",
+                "I'm at my boiling point",
+                "I'm about to lose it"
+            ],
+            "responses": [
+                "It sounds like you're feeling angry. To manage or change this emotion, consider engaging in activities that help you release pent-up energy and calm your mind, such as deep breathing exercises, physical activity like running or boxing, journaling about your feelings, or taking a break to cool off and gain perspective.",
+                "Feeling angry is a natural response to certain situations, but it's essential to find healthy ways to express and manage your emotions. Remember to communicate assertively rather than aggressively.",
+                "When you're feeling angry, it can be helpful to identify the root cause of your frustration and address it constructively. Problem-solving and finding solutions can often alleviate feelings of anger.",
+                "Seeking support from a trusted friend, family member, or therapist can provide a safe space to express your feelings and gain insights into managing anger more effectively.",
+                "Practice mindfulness techniques to cultivate awareness of your emotions without reacting impulsively. Mindfulness meditation, yoga, or progressive muscle relaxation can help you stay grounded and centered.",
+                "Channel your anger into productive outlets, such as creative expression, activism, or volunteer work. Transforming negative energy into positive action can be empowering and cathartic.",
+                "Set boundaries and assert your needs in a calm and respectful manner. Assertiveness can help prevent feelings of anger from escalating into conflict and promote healthy communication.",
+                "Take a time-out when you feel overwhelmed by anger. Step away from the situation, engage in a calming activity, or use relaxation techniques to regain control of your emotions.",
+                "Practice forgiveness and let go of grudges to free yourself from the burden of anger. Holding onto resentment only prolongs your suffering and prevents healing.",
+                "Focus on self-care and prioritize activities that nourish your mind, body, and spirit. Taking care of yourself allows you to replenish your energy and better cope with life's challenges."
+            ],
+            "context": [""]
+        },
+        
+        {
+            "tag": "afraid",
+            "patterns": [
+                "I'm afraid",
+                "Feeling scared",
+                "I'm fearful",
+                "Feeling anxious",
+                "I'm terrified",
+                "I'm panicking",
+                "I'm shaking with fear",
+                "I'm having a panic attack",
+                "I'm feeling uneasy",
+                "I'm overwhelmed with dread"
+            ],
+            "responses": [
+                "Feeling afraid is challenging, but there are activities you can do to help manage or overcome this emotion. Consider practicing relaxation techniques like deep breathing or meditation, facing your fears gradually through exposure therapy, seeking support from a therapist or counselor, or engaging in activities that make you feel safe and grounded, such as spending time with supportive friends or engaging in calming hobbies.",
+                "It's natural to feel afraid at times, but it's essential to remember that fear doesn't have to control you. By taking small steps to confront your fears and develop coping strategies, you can gradually reduce your anxiety and regain a sense of control.",
+                "When you're feeling afraid, it can be helpful to challenge negative thoughts and beliefs that contribute to your anxiety. Cognitive-behavioral techniques, such as reframing irrational fears and focusing on evidence-based thinking, can empower you to overcome your fears.",
+                "Seeking professional help from a therapist or counselor can provide you with the guidance and support you need to address underlying issues contributing to your fear and anxiety. Therapy can equip you with coping skills and strategies to manage your emotions more effectively.",
+                "Practice mindfulness to cultivate awareness of your thoughts and feelings without judgment. Mindfulness meditation, grounding exercises, and relaxation techniques can help you stay present in the moment and reduce feelings of anxiety.",
+                "Engage in activities that promote relaxation and stress relief, such as taking a warm bath, listening to calming music, or practicing progressive muscle relaxation. Creating a soothing environment can help alleviate feelings of fear and promote a sense of calm.",
+                "Build a support network of friends, family members, or support groups who can offer encouragement, understanding, and empathy during times of fear and uncertainty. Connecting with others who share similar experiences can provide validation and comfort.",
+                "Set small, achievable goals for yourself to gradually confront and overcome your fears. Celebrate each success, no matter how small, and acknowledge your progress along the way. Facing your fears in manageable steps can build confidence and resilience.",
+                "Educate yourself about the nature of fear and anxiety to gain a deeper understanding of your emotions and learn effective coping strategies. Knowledge is empowering and can help demystify fears that may seem overwhelming or irrational.",
+                "Practice self-care and prioritize activities that promote your well-being and resilience. Engaging in regular exercise, maintaining a healthy lifestyle, and getting adequate rest can strengthen your ability to cope with fear and stress."
+            ],
+            "context": [""]
+        },
+         
+        {
+            "tag": "surprised",
+            "patterns": [
+                "I'm surprised",
+                "Feeling astonished",
+                "I'm shocked",
+                "I'm amazed",
+                "I can't believe it",
+                "This is unexpected",
+                "I'm taken aback",
+                "I never saw this coming",
+                "What a pleasant surprise",
+                "I'm in disbelief"
+            ],
+            "responses": [
+                "Surprise can be a fun and exciting emotion! To maintain or prolong this feeling, consider embracing spontaneity by trying new experiences, exploring new places, or engaging in activities that challenge your expectations. You can also savor the moment by sharing your surprise with others or reflecting on what made the experience unexpected and enjoyable.",
+                "The feeling of astonishment can be invigorating! To extend this sensation, why not take a moment to fully immerse yourself in the unexpected? Whether it's exploring a new hobby, traveling to a new destination, or simply trying a new cuisine, embracing the unknown can keep the feeling of surprise alive.",
+                "Being shocked can be a thrilling experience! To make the most of this sensation, why not seek out activities that push your boundaries and test your limits? Whether it's trying an extreme sport, attending a surprise event, or immersing yourself in a thrilling movie or book, embracing the unexpected can add excitement to your life.",
+                "Feeling amazed is a wonderful sensation! To continue enjoying this feeling, why not take the time to appreciate the beauty and wonder in the world around you? Whether it's marveling at nature's wonders, exploring the arts, or learning something new, cultivating a sense of awe can keep the feeling of amazement alive.",
+                "Experiencing surprise is like discovering a hidden treasure! To keep this feeling alive, why not seek out new and unexpected experiences? Whether it's embarking on a spontaneous adventure, trying a new activity, or meeting new people, embracing the unexpected can add excitement and joy to your life.",
+                "When you're surprised, it's like unwrapping a present! To prolong this feeling, why not engage in activities that spark your curiosity and sense of wonder? Whether it's exploring a new place, trying a new hobby, or learning something new, embracing the unexpected can bring joy and excitement.",
+                "The feeling of being taken aback can be exhilarating! To keep this sensation alive, why not challenge yourself to step outside your comfort zone? Whether it's trying a new food, exploring a new hobby, or taking a spontaneous trip, embracing the unexpected can lead to new discoveries and experiences.",
+                "Experiencing the unexpected can leave you speechless! To maintain this feeling, why not share your surprise with others? Whether it's recounting your experience to friends and family, writing about it in a journal, or capturing it in a photo, sharing your surprise can prolong the joy of the unexpected.",
+                "Feeling surprised can be like a bolt from the blue! To keep this feeling alive, why not take a moment to reflect on what made the experience unexpected and enjoyable? Whether it's savoring the moment, expressing gratitude, or simply smiling at the memory, reflecting on your surprise can prolong the joy and excitement.",
+                "Experiencing disbelief can be like living in a dream! To maintain this feeling, why not seek out activities that challenge your perceptions and broaden your horizons? Whether it's exploring new perspectives, learning from others, or questioning the status quo, embracing the unexpected can keep the feeling of disbelief alive."
+            ],
+            "context": [""]
+        },
+        
+        {
+            "tag": "disgusted",
+            "patterns": [
+                "I'm disgusted",
+                "Feeling repulsed",
+                "I'm revolted",
+                "I'm grossed out",
+                "This is revolting",
+                "I feel sickened",
+                "I can't stand this",
+                "This is nauseating",
+                "I'm appalled",
+                "I'm horrified"
+            ],
+            "responses": [
+                "Feeling disgusted can be uncomfortable, but there are activities you can do to help change or manage this emotion. Consider engaging in activities that distract or redirect your focus, such as immersing yourself in a favorite hobby, spending time with supportive friends, or practicing mindfulness and grounding techniques. You can also take steps to address the source of your discomfort, such as removing yourself from the situation or seeking support from others.",
+                "When you're feeling repulsed, it's important to take care of yourself. Try engaging in activities that help you relax and unwind, such as taking a warm bath, listening to calming music, or going for a leisurely walk in nature. Remember to practice self-compassion and seek support from loved ones if needed.",
+                "Feeling revolted can be distressing, but there are ways to cope with this emotion. Consider engaging in activities that help you feel grounded and connected, such as practicing deep breathing exercises, meditating, or spending time in nature. You can also try to focus on positive experiences and things that bring you joy to help shift your perspective.",
+                "When you're grossed out by something, it's natural to feel uncomfortable. To help change or manage this emotion, try engaging in activities that distract or divert your attention, such as watching a funny movie, reading a captivating book, or spending time with pets. Remember to practice self-care and seek support from others if needed.",
+                "Experiencing something revolting can be challenging, but there are ways to cope with this emotion. Consider engaging in activities that help you feel calm and centered, such as practicing mindfulness meditation, doing gentle yoga, or taking a relaxing bath. You can also try expressing your feelings through journaling or creative outlets.",
+                "When you feel sickened by something, it's important to take steps to care for yourself. Try engaging in activities that help you feel grounded and safe, such as spending time with trusted friends or family members, practicing relaxation techniques like deep breathing or progressive muscle relaxation, or engaging in gentle physical activity like walking or yoga.",
+                "If you can't stand what you're experiencing, it's okay to take a step back and give yourself some space. Try engaging in activities that help you feel more comfortable and at ease, such as spending time in a quiet, peaceful environment, listening to soothing music, or practicing relaxation exercises like deep breathing or guided imagery.",
+                "When something is nauseating, it's important to take care of yourself and address your discomfort. Try engaging in activities that help distract or soothe you, such as watching a lighthearted comedy, spending time with loved ones, or practicing relaxation techniques like deep breathing or progressive muscle relaxation. Remember to be gentle with yourself and seek support if needed.",
+                "Feeling appalled by something can be overwhelming, but there are ways to cope with this emotion. Consider engaging in activities that help you feel grounded and connected, such as spending time in nature, practicing mindfulness meditation, or engaging in creative pursuits like painting or writing. You can also try to focus on positive experiences and things that bring you joy.",
+                "Experiencing horror can be distressing, but there are ways to cope with this emotion. Try engaging in activities that help you feel safe and secure, such as spending time with trusted friends or family members, listening to calming music, or engaging in gentle physical activity like walking or yoga. Remember to take care of yourself and seek support if needed."
+            ],
+            "context": [""]
+        },
+        
+        {
+            "tag": "neutral",
+            "patterns": [
+                "I'm feeling neutral",
+                "I'm indifferent",
+                "Feeling meh",
+                "I don't feel strongly either way",
+                "I'm neither happy nor sad",
+                "I'm not particularly excited",
+                "I'm not sure how I feel",
+                "I feel kind of blah",
+                "I'm in a neutral mood",
+                "I'm feeling apathetic"
+            ],
+            "responses": [
+                "Feeling neutral is a common experience, but there are activities you can do to help reconnect with your emotions or shift your mood if desired. Consider engaging in activities that bring you a sense of balance and well-being, such as practicing mindfulness or meditation, spending time in nature, pursuing creative outlets, or connecting with others through meaningful conversations or activities.",
+                "When you're feeling indifferent, it's important to acknowledge your emotions without judgment. You can try engaging in activities that spark your curiosity or interest, such as exploring new hobbies, reading thought-provoking books, or trying new experiences. Remember that it's okay to feel neutral at times, and focus on finding activities that bring you joy and fulfillment.",
+                "Experiencing a 'meh' feeling is common, but there are ways to enhance your mood and find enjoyment in the present moment. Try engaging in activities that stimulate your senses or bring you comfort, such as listening to your favorite music, indulging in a delicious meal, or spending time with pets. You can also try practicing gratitude or mindfulness to cultivate a greater sense of appreciation for life's simple pleasures.",
+                "When you don't feel strongly either way, it's okay to embrace the neutrality of your emotions. You can try engaging in activities that help you feel centered and present, such as practicing yoga, going for a peaceful walk, or spending time in quiet reflection. Remember to focus on self-care and do what feels right for you in the moment.",
+                "Experiencing neither happiness nor sadness is a common experience, but there are ways to cultivate a greater sense of well-being and fulfillment. Try engaging in activities that align with your values and bring you a sense of purpose, such as volunteering, pursuing creative passions, or spending quality time with loved ones. Remember to listen to your inner voice and honor your emotions without judgment.",
+                "When you're not particularly excited about anything, it's important to practice self-compassion and be gentle with yourself. You can try engaging in activities that help you feel more energized and engaged, such as taking a brisk walk, practicing deep breathing exercises, or engaging in creative expression. Remember that it's okay to have ups and downs in your emotional experience, and focus on finding moments of joy and contentment.",
+                "Feeling unsure about your emotions is a common experience, but there are ways to explore and understand your feelings more deeply. Try engaging in activities that encourage self-reflection and introspection, such as journaling, meditation, or talking to a trusted friend or therapist. Remember to be patient with yourself as you navigate your emotional landscape.",
+                "When you feel kind of blah, it's important to practice self-care and nurture yourself back to a state of well-being. You can try engaging in activities that help you feel more grounded and centered, such as practicing mindfulness meditation, spending time in nature, or engaging in creative pursuits. Remember that it's okay to have days where you feel less motivated or inspired, and focus on taking small steps to nourish your body, mind, and spirit.",
+                "Being in a neutral mood is a common experience, but there are ways to infuse your day with moments of joy and fulfillment. Try engaging in activities that bring you a sense of pleasure or satisfaction, such as cooking your favorite meal, listening to uplifting music, or spending time with cherished friends or family members. Remember to savor the simple pleasures of life and find moments of gratitude.",
+                "Feeling apathetic is challenging, but there are ways to reconnect with your emotions and find motivation to engage with life. Try engaging in activities that spark your curiosity or interest, such as exploring new hobbies, setting small achievable goals, or seeking inspiration from uplifting stories or experiences. Remember that it's okay to take things one step at a time and reach out for support if needed."
+            ],
+            "context": [""]
+        },
+
+        {
+        
+            "tag": "what_to_do",
+            "patterns": [
+                "What should I do when I'm happy?",
+                "I'm feeling joyful, what activities can I do?",
+                "When I'm in a good mood, what can I engage in?",
+                "How can I make the most of my happiness?",
+                "What are some activities to do when I'm feeling ecstatic?",
+                "What to do to maintain my happiness?",
+                "I'm excited, what fun things can I do?",
+                "What are some ways to celebrate my happiness?",
+                "Feeling great, what activities should I consider?",
+                "How can I enjoy my happiness even more?"
+             ],
+            "responses": [
+                "When you're happy, there are plenty of activities you can enjoy to make the most of your positive mood!",
+                " Spend quality time with loved ones.",
+                " Engage in activities you're passionate about.",
+                " Practice gratitude by writing down things you're thankful for.",
+                " Exercise or go for a walk to release endorphins.",
+                " Treat yourself to something you enjoy, like your favorite meal or dessert.",
+                " Listen to uplifting music or watch a feel-good movie.",
+                " Get creative by painting, drawing, or crafting.",
+                " Spread kindness by helping others or volunteering.",
+                " Plan a fun outing or adventure.",
+                " Reflect on your achievements and celebrate your successes!"
+            ],
+            "context": [""]
+        },
+
+        {
+    
+            "tag": "what_to_do",
+            "patterns": [
+                "What should I do when I'm surprised?",
+                "I'm feeling astonished, what activities can I do?",
+                "When I'm shocked, what should I engage in?",
+                "How can I make the most of my surprise?",
+                "What are some activities to do when I'm feeling amazed?",
+                "What to do to maintain my surprise?",
+                "I'm pleasantly surprised, what fun things can I do?",
+                "What are some ways to enjoy my surprise?",
+                "Feeling unexpectedly happy, what activities should I consider?",
+                "How can I embrace and savor my surprise?"
+             ],
+            "responses": [
+                "When you're surprised, there are plenty of enjoyable activities to make the most of the moment!",
+                " Embrace spontaneity and try something new or adventurous.",
+                " Share your surprise with others and relive the moment together.",
+                " Reflect on what made the experience surprising and enjoyable.",
+                " Capture the moment with a photo or video to remember it by.",
+                " Engage in stimulating conversation about the unexpected event.",
+                " Explore new places or seek out unique experiences.",
+                " Allow yourself to feel curious and explore the unknown.",
+                " Express gratitude for the positive or unexpected outcome.",
+                " Take a moment to appreciate the joy of the unexpected.",
+                " Stay open to future surprises and cherish each moment of delight!"
+            ],
+            "context": [""]
+        },
+                    
+        
+        {
+        
+            "tag": "what_to_do",
+            "patterns": [
+                "What should I do when I'm angry?",
+                "I'm feeling furious, what actions can I take?",
+                "When I'm mad, how can I calm down?",
+                "How can I manage my frustration?",
+                "What are some activities to do when I'm feeling angry?",
+                "What to do to control my anger?",
+                "I'm infuriated, what can I do to cool off?",
+                "What are some ways to release pent-up anger?",
+                "Feeling enraged, what strategies should I consider?",
+                "How can I channel my anger into something positive?"
+            ],
+            "responses": [
+                "When you're angry, it's important to find healthy ways to manage and express your emotions.",
+                " Take deep breaths to calm your mind and body.",
+                " Engage in physical activity like running or boxing to release tension.",
+                " Practice mindfulness or meditation to gain perspective and clarity.",
+                " Express your feelings through journaling or talking to a trusted friend.",
+                " Take a break from the situation to prevent escalation.",
+                " Use relaxation techniques like progressive muscle relaxation or visualization.",
+                " Redirect your focus by engaging in a favorite hobby or activity.",
+                " Identify and challenge any negative thought patterns contributing to your anger.",
+                " Seek professional help or counseling if you struggle to manage your anger.",
+                " Channel your energy into constructive activities like problem-solving or creative expression."
+            ],
+            "context": [""]
+        },
+
+        {
+            "tag": "what_to_do",
+            "patterns": [
+                "What should I do when I'm feeling neutral?",
+                "I'm feeling indifferent, what actions can I take?",
+                "When I'm in a 'meh' mood, how can I change it?",
+                "How can I shift from feeling neutral to feeling more positive?",
+                "What are some activities to do when I'm feeling indifferent?",
+                "What to do to reconnect with my emotions when I'm feeling neutral?",
+                "I'm feeling neither happy nor sad, what can I do?",
+                "What are some ways to uplift my mood when I'm feeling meh?",
+                "Feeling apathetic, what strategies should I consider?",
+                "How can I inject some excitement into my day when I'm feeling neutral?"
+            ],
+            "responses": [
+                "When you're feeling neutral, it's an opportunity to explore activities that bring you joy and fulfillment.",
+                "Engage in activities that align with your values and interests.",
+                "Connect with loved ones through meaningful conversations or shared experiences.",
+                "Spend time in nature to recharge and gain perspective.",
+                "Practice gratitude by reflecting on the positive aspects of your life.",
+                "Explore new hobbies or interests to stimulate your curiosity.",
+                "Volunteer or help others to cultivate a sense of purpose and connection.",
+                "Set small, achievable goals to give yourself a sense of accomplishment.",
+                "Challenge yourself to step out of your comfort zone and try something new.",
+                "Practice self-care activities such as meditation, yoga, or taking a relaxing bath.",
+                "Seek inspiration from books, movies, or art that resonate with your values and aspirations."
+            ],
+            "context": [""]
+        },
+
+        {
+            "tag": "what_to_do_fear",
+            "patterns": [
+                "What should I do when I'm feeling afraid?",
+                "I'm feeling scared, what actions can I take?",
+                "When I'm fearful, how can I manage it?",
+                "How can I overcome my fears?",
+                "What are some activities to do when I'm feeling anxious?",
+                "What to do to cope with fear?",
+                "I'm feeling scared, what should I do?",
+                "How can I calm my fears?",
+                "Feeling anxious, what strategies should I consider?",
+                "What can I do to feel safe and secure when I'm afraid?"
+            ],
+            "responses": [
+                "When you're feeling afraid, it's important to take steps to calm your mind and regain a sense of control.",
+                "Practice deep breathing exercises to help relax your body and mind.",
+                "Engage in mindfulness or meditation to focus on the present moment and reduce anxiety.",
+                "Talk to a trusted friend or family member about your fears and seek their support.",
+                "Consider seeking professional help from a therapist or counselor to address underlying anxiety.",
+                "Distract yourself with activities you enjoy or tasks that require your full attention.",
+                "Challenge negative thoughts and beliefs that contribute to your fear, and replace them with positive affirmations.",
+                "Gradually face your fears through exposure therapy, starting with small, manageable steps.",
+                "Create a safe space for yourself where you can relax and feel secure.",
+                "Limit exposure to sources of fear-inducing stimuli, such as news or social media, if they contribute to your anxiety.",
+                "Remember that it's okay to feel afraid, but you have the strength and resilience to overcome your fears."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "what_to_do_sad",
+            "patterns": [
+                "What should I do when I'm feeling sad?",
+                "I'm feeling down, what actions can I take?",
+                "When I'm feeling blue, how can I lift my spirits?",
+                "How can I overcome sadness?",
+                "What are some activities to do when I'm feeling melancholy?",
+                "What to do to cope with sadness?",
+                "I'm feeling low, what should I do?",
+                "How can I cheer myself up when I'm sad?",
+                "Feeling gloomy, what strategies should I consider?",
+                "What can I do to feel better when I'm sad?"
+            ],
+            "responses": [
+                "When you're feeling sad, it's important to take steps to nurture yourself and find comfort.",
+                "Allow yourself to feel your emotions without judgment or guilt.",
+                "Reach out to supportive friends or family members for comfort and companionship.",
+                "Engage in activities that bring you joy or provide a sense of accomplishment, such as hobbies or creative outlets.",
+                "Spend time in nature or engage in physical activity to boost your mood and energy levels.",
+                "Practice self-care activities such as taking a warm bath, listening to soothing music, or cuddling with a pet.",
+                "Express your feelings through journaling, art, or music to process and release pent-up emotions.",
+                "Seek professional help from a therapist or counselor if your sadness persists or interferes with daily functioning.",
+                "Challenge negative thoughts and beliefs that contribute to your sadness, and reframe them in a more positive light.",
+                "Engage in acts of kindness or volunteer work to shift your focus outward and cultivate a sense of purpose.",
+                "Reember that sadness is a natural part of life, and it's okay to ask for help when you need it."
+            ],
+            "context": [""]
+        }, 
+        {
+            "tag": "what_to_do_fear",
+            "patterns": [
+                "What should I do when I'm feeling fearful?",
+                "I'm feeling scared, what actions can I take?",
+                "When I'm feeling anxious, how can I calm myself?",
+                "How can I overcome fear?",
+                "What are some activities to do when I'm feeling afraid?",
+                "What to do to cope with fear?",
+                "I'm feeling terrified, what should I do?",
+                "How can I reassure myself when I'm afraid?",
+                "Feeling nervous, what strategies should I consider?",
+                "What can I do to feel safer when I'm fearful?"
+            ],
+            "responses": [
+                "When you're feeling fearful, it's important to prioritize self-care and find ways to soothe your anxiety.",
+                "Practice deep breathing or mindfulness techniques to calm your nervous system and reduce anxiety.",
+                "Engage in physical activity or exercise to release tension and boost your mood.",
+                "Seek support from trusted friends, family members, or a therapist who can provide comfort and reassurance.",
+                "Challenge irrational thoughts and beliefs that contribute to your fear, and replace them with more realistic and positive perspectives.",
+                "Create a safe and calming environment for yourself by surrounding yourself with comforting objects or soothing music.",
+                "Use relaxation techniques such as progressive muscle relaxation or visualization to promote relaxation and reduce anxiety.",
+                "Distract yourself with activities that capture your attention and provide a temporary reprieve from your fear.",
+                "Practice self-compassion and remind yourself that it's normal to feel afraid, and that you have the strength to overcome your fears.",
+                "Gradually face your fears through exposure therapy or desensitization exercises, with the support of a therapist if needed.",
+                "Remember that fear is a natural response to perceived threats, and that you have the resilience to cope with and overcome your fears."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "what_to_do_disgust",
+            "patterns": [
+                "What should I do when I'm feeling disgusted?",
+                "I'm feeling repulsed, what actions can I take?",
+                "When I'm feeling revolted, how can I change my mood?",
+                "How can I cope with feelings of disgust?",
+                "What are some activities to do when I'm feeling grossed out?",
+                "What to do to manage disgust?",
+                "I'm feeling nauseated, what should I do?",
+                "How can I calm myself when I'm feeling disgusted?",
+                "Feeling repulsed, what strategies should I consider?",
+                "What can I do to overcome feelings of disgust?"
+            ],
+            "responses": [
+                "When you're feeling disgusted, it's important to address the source of your discomfort and find ways to soothe your emotions.",
+                "Remove yourself from the situation or environment that triggers feelings of disgust.",
+                "Engage in activities that distract or redirect your focus, such as listening to music or practicing a hobby.",
+                "Practice mindfulness and grounding techniques to bring your awareness back to the present moment and reduce feelings of revulsion.",
+                "Talk to a trusted friend, family member, or therapist about your feelings to gain perspective and support.",
+                "Focus on self-care activities that promote relaxation and well-being, such as taking a warm bath or practicing yoga.",
+                "Challenge negative thoughts and beliefs associated with disgust, and replace them with more balanced and rational perspectives.",
+                "Practice gratitude by focusing on the positive aspects of your life and the things you're thankful for.",
+                "Engage in activities that bring you joy and pleasure to counteract feelings of repulsion.",
+                "Seek professional help if feelings of disgust are overwhelming or interfere with your daily functioning.",
+                "Remember that feelings of disgust are temporary and manageable, and that you have the strength to overcome them."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "recommend_joke_video_sad",
+            "patterns": [
+                "I'm sad.",
+                "I'm feeling sad.",
+                "I'm feeling down.",
+                "Sad vibes today. recommend me a video",
+                "Recommend me a joke, I'm feeling sad."
+            ],
+            "responses": [
+                "Here's a tech joke to lighten the mood: Why was the computer cold? It left its Windows open.",
+                "Check out this funny tech video to lift your spirits: [Insert video link here]",
+                "This tech meme might bring a smile to your face: [https://www.pinterest.com/bgsutech/technology-memes/]",
+                "Hope this tech joke helps cheer you up: Why did the smartphone go to school? It wanted to be smart.",
+                "Take a break with this funny tech video: [https://www.youtube.com/watch?v=gK5WGM2WHCI]",
+                "How about this tech joke: Why do programmers prefer dark mode? Because light attracts bugs!",
+                "Brighten your day with this hilarious tech video: [https://www.youtube.com/watch?v=gK5WGM2WHCI]",
+                "This tech meme perfectly captures the struggle: [https://www.pinterest.com/bgsutech/technology-memes/]",
+                "Why did the computer keep its glasses on? It had web sight!",
+                "Need a laugh? Check out this tech fail compilation: [https://www.youtube.com/shorts/ijwxNs_GwYw]"
+            ],
+            "context": [""]
+        },
+        
+        {
+            "tag": "recommend_joke_video_disgust",
+            "patterns": [
+                "I'm disgusted.",
+                "Feeling repulsed.",
+                "I'm revolted.",
+                "I'm grossed out.",
+                "Give me a joke, I'm feeling disgusted."
+            ],
+            "responses": [
+                "How about this tech joke to lighten the mood: Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings.",
+                "Check out this funny tech video to distract yourself from disgust: [Insert video link here]",
+                "This tech meme might help ease your disgust: [https://www.pinterest.com/bgsutech/technology-memes/]",
+                "Here's a tech joke for you: Why did the computer keep turning on and off? It had a terminal illness.",
+                "Take a break with this funny tech video: [Insert video link here]",
+                "Need a laugh? How about this tech joke: Why was the HTML developer's coffee so bitter? He forgot to <brew> it!",
+                "Brighten your day with this hilarious tech video: [Insert video link here]",
+                "This tech meme perfectly captures the feeling of disgust: [Insert meme link here]",
+                "Why did the programmer quit his job? Because he didn't get arrays!",
+                "Need a distraction? Check out this funny tech video: [Insert video link here]"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "recommend_joke_video_angry",
+            "patterns": [
+                "I'm angry.",
+                "Feeling furious.",
+                "I'm mad.",
+                "I'm frustrated.",
+                "Give me a joke, I'm feeling angry."
+            ],
+            "responses": [
+                "Here's a tech joke to lighten the mood: Why did the computer go to therapy? It had too many bytes of emotional baggage.",
+                "Check out this funny tech video to distract yourself from anger: [Insert video link here]",
+                "This tech meme might help ease your anger: [Insert meme link here]",
+                "Need a laugh? How about this tech joke: Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings.",
+                "Take a break with this funny tech video: [Insert video link here]",
+                "Brighten your day with this hilarious tech joke: Why did the programmer quit his job? Because he didn't get arrays!",
+                "This tech meme perfectly captures the feeling of anger: [Insert meme link here]",
+                "Why did the computer keep turning on and off? It had a terminal illness.",
+                "Need a distraction? Check out this funny tech video: [Insert video link here]",
+                "What's a computer's least favorite food? Spam!"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "recommend_joke_video_neutral",
+            "patterns": [
+                "I'm feeling neutral.",
+                "I'm indifferent.",
+                "Feeling meh.",
+                "What to do when I'm feeling neutral?",
+                "Can you recommend a joke?"
+            ],
+            "responses": [
+                "How about a tech joke to brighten your mood: Why did the computer keep cold? It left its Windows open!",
+                "Take a break and watch this funny tech video: [Insert video link here]",
+                "This tech meme might bring a smile to your face: [Insert meme link here]",
+                "Need a laugh? Check out this tech joke: Why do programmers prefer dark mode? Because light attracts bugs!",
+                "Enjoy a chuckle with this tech video: [Insert video link here]",
+                "Here's another tech joke for you: Why did the web developer go broke? Because he used up all his cache!",
+                "Feeling neutral? This tech meme might resonate with you: [Insert meme link here]",
+                "What's an astronaut's favorite part of a computer? The space bar!",
+                "In need of a distraction? Watch this funny tech video: [Insert video link here]",
+                "Why was the math book sad? Because it had too many problems!"
+            ],
+            "context": [""]
+        },   
+        {
+            "tag": "sad",
+            "patterns": [
+                "I feel down",
+                "Feeling low",
+                "I'm in a funk",
+                "Feeling gloomy",
+                "I'm not myself today",
+                "Feeling heartbroken",
+                "I'm feeling blue",
+                "I'm having a tough time",
+                "I feel like crying",
+                "Feeling lost and alone"
+            ],
+            "responses": [
+                "I'm here to offer support and understanding during this difficult time. Remember, it's okay to feel sad. Emotions, even painful ones, are a natural part of being human.",
+                "Feeling low can be overwhelming, but you don't have to face it alone. Whether you want to talk about what's bothering you or simply have someone to listen, I'm here for you.",
+                "When you're in a funk, it's important to be gentle with yourself. Take a moment to acknowledge your feelings and know that it's okay not to feel okay sometimes. Let's navigate through this together.",
+                "Feeling gloomy can make everything seem more challenging. Take small steps to care for yourself today. Whether it's taking a soothing bath, listening to calming music, or reaching out to a friend, prioritize your well-being.",
+                "It's tough not feeling like yourself. Remember, you're not alone in this. Let's work together to explore ways to cope with these emotions and find moments of comfort and peace.",
+                "Heartbreak is a deeply painful emotion. Allow yourself to mourn and grieve at your own pace. Remember, healing takes time, and it's okay to seek support from others when you need it.",
+                "Feeling blue can feel like an endless cycle. Let's find ways to break through this emotional barrier together. Whether it's engaging in activities you enjoy or seeking professional help, there are steps we can take to lift your spirits.",
+                "Having a tough time is part of life's ups and downs. Take a moment to recognize your resilience and strength in navigating through difficult emotions. You've overcome challenges before, and you'll overcome this one too.",
+                "Feeling like crying is a natural response to emotional pain. Allow yourself to express your emotions in a way that feels safe and comforting for you. Remember, tears can be a cleansing release.",
+                "Feeling lost and alone can be isolating. Know that you are valued and cared for. Let's explore ways to reconnect with sources of support and find moments of connection and solace."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "angry",
+            "patterns": [
+                "I'm so mad right now",
+                "Feeling furious",
+                "I'm boiling with rage",
+                "I'm seeing red",
+                "I'm about to explode",
+                "I'm frustrated beyond belief",
+                "I can't handle this anger",
+                "I'm at my breaking point",
+                "I'm so irritated",
+                "I'm feeling enraged"
+            ],
+            "responses": [
+                "Anger can be overwhelming, but it's also an opportunity to explore what's triggering these intense emotions. Let's unpack what's behind your anger and find constructive ways to address it.",
+                "Feeling furious can cloud your judgment and make it difficult to see beyond the anger. Take a moment to step back and breathe deeply. Let's work together to find a healthier way to navigate through these emotions.",
+                "Boiling with rage can feel like an uncontrollable force, but you have the power to channel that energy into something positive. Let's explore ways to transform your anger into productive action and find a sense of empowerment.",
+                "When you're seeing red, it's challenging to think clearly. Take a moment to pause and reflect on what's truly fueling your anger. Together, we can develop strategies to address the underlying issues and find resolution.",
+                "Feeling like you're about to explode is a sign that your emotions are reaching a boiling point. Let's find ways to release that pent-up energy in a healthy and constructive manner.",
+                "Frustration beyond belief can feel like you're hitting a wall. Remember, it's okay to ask for help when you're feeling overwhelmed. Together, we can break down those barriers and find a path forward.",
+                "Handling anger can feel like an impossible task, but you're not alone in this. Let's explore coping mechanisms and strategies to manage your anger in a way that's healthy and constructive.",
+                "Reaching your breaking point is a signal that something needs to change. Let's work together to identify the triggers of your anger and develop coping strategies to prevent it from reaching this intensity in the future.",
+                "Feeling irritated is a natural response to frustration, but it's important to address the underlying issues rather than simply reacting to the surface level emotions. Let's delve deeper and find solutions that bring about lasting change.",
+                "Enraged feelings can be all-consuming, but there are ways to regain control. Let's explore relaxation techniques, problem-solving strategies, and communication skills to help you manage your anger more effectively."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "surprise",
+            "patterns": [
+                "I'm surprised",
+                "Feeling astonished",
+                "I'm shocked",
+                "I'm amazed",
+                "I can't believe it",
+                "This is unexpected",
+                "I'm taken aback",
+                "I never saw this coming",
+                "What a pleasant surprise",
+                "I'm in disbelief"
+            ],
+            "responses": [
+                "Wow, that's unexpected! It's like when something happens that you didn't think would happen. It can be really exciting!",
+                "Being surprised is like when something totally unexpected happens, and it catches you off guard. It's kind of like, 'Whoa, didn't see that coming!'",
+                "Feeling astonished is when something happens that's really surprising, like you're amazed or shocked by it. It's like, 'Whoa, that's incredible!'",
+                "Shocked is when something happens that's so surprising, it's like your brain can't quite believe it. It's like, 'Wait, what?!'",
+                "Amazed is when something happens that's so cool or unexpected, it's like you're in awe of it. It's like, 'That's amazing!'",
+                "When you say 'I can't believe it,' it's like you're really surprised by something. It's like, 'No way, that actually happened?'",
+                "Taken aback is when something happens that's so surprising, it's like you're a little speechless. It's like, 'Um, I wasn't expecting that!'",
+                "Never saw this coming is like when something happens that's completely out of the blue. It's like, 'Well, that was unexpected!'",
+                "What a pleasant surprise is when something really nice happens that you didn't expect at all. It's like, 'Oh, that's so nice!'",
+                "In disbelief is when something happens that's so surprising, it's like you can't quite believe it's real. It's like, 'Is this for real?'"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "fear",
+            "patterns": [
+                "I'm afraid",
+                "Feeling scared",
+                "I'm fearful",
+                "Feeling anxious",
+                "I'm terrified",
+                "I'm panicking",
+                "I'm shaking with fear",
+                "I'm having a panic attack",
+                "I'm feeling uneasy",
+                "I'm overwhelmed with dread",
+                "I'm filled with anxiety"
+            ],
+            "responses": [
+                "Feeling afraid is tough, but you're not alone. Let's work together to find ways to ease your fears and feel more grounded.",
+                "When you're scared, it's important to take a deep breath and remind yourself that you're safe. Let's explore techniques to help you manage your fear and anxiety.",
+                "Fear and anxiety can be overwhelming, but there are strategies to help you cope. Let's discuss ways to calm your mind and regain a sense of control.",
+                "Feeling anxious can make everything seem scarier than it is. Remember to take things one step at a time and focus on the present moment.",
+                "Terrifying thoughts can make you feel paralyzed, but you have the strength to overcome them. Let's find ways to challenge those fears and build your confidence.",
+                "Panic attacks can be frightening, but they're temporary. Let's work on grounding exercises to help you ride out the waves of panic.",
+                "Shaking with fear is a natural response to perceived danger, but often, the threat isn't as real as it seems. Let's explore ways to differentiate between real and imagined threats.",
+                "During a panic attack, it can feel like the world is closing in on you. Remember, this feeling will pass. Let's find techniques to help you ride out the storm.",
+                "Feeling uneasy is your body's way of signaling potential danger, but sometimes, it's just your mind playing tricks on you. Let's learn to distinguish between genuine threats and false alarms.",
+                "Overwhelming dread can feel suffocating, but you have the power to break free from its grip. Let's develop coping strategies to help you face your fears and reclaim your sense of peace.",
+                "Anxiety can feel like a heavy weight on your chest, but you have the strength to carry it. Let's work together to lighten that load and find moments of calm amidst the storm."
+            ],
+            "context": [""]
+        }
+        
+        
+        
+        
+    ]
+}    
+        
+
+
+
+          
+            
+                
+              
+            
+        
+        
+        
+    
+

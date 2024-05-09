@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            width: 75%;
+            margin: auto;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: palegreen;
+        }
+        .inner-container {
+            width: 75%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        #video-box {
+            border: 1px solid #000;
+            height: 240px; /* Adjust as needed */
+            width: 480px; /* Adjust as needed */
+            margin: 20px auto;
+        }
+        button {
+            padding: 10px 20px;
+        }
+        #back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        #launch-button {
+            position:absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #chat-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        #stop-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="inner-container">
+        <h1>Hello, get your results</h1>
+
+        <div id="video-box">
+            <video id="video" autoplay></video> <!-- Updated: Added video element for webcam feed -->
+        </div>
+
+        <button id="back-button">Back</button>
+        <button id="launch-button" onclick="startModel()">Launch</button>
+        <button id="stop-button" onclick="stopModel()" style="display: none;">Stop</button> <!-- Updated: Added Stop button -->
+        <button id="chat-button">Chat with therapist</button>
+    </div>
+</div>
+
+<script>
+    var videoStream; // Variable to hold the video stream
+
+    function startModel() {
+        var video = document.getElementById('video');
+
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+                video.srcObject = stream;
+                videoStream = stream; // Store the video stream
+                document.getElementById('launch-button').style.display = 'none'; // Hide the Launch button
+                document.getElementById('stop-button').style.display = 'inline-block'; // Show the Stop button
+            });
+        }
+    }
+
+    function stopModel() {
+        if (videoStream) {
+            // Stop the video stream
+            videoStream.getTracks().forEach(track => track.stop());
+            document.getElementById('launch-button').style.display = 'inline-block'; // Show the Launch button
+            document.getElementById('stop-button').style.display = 'none'; // Hide the Stop button
+        }
+    }
+</script>
+
+</body>
+</html>
